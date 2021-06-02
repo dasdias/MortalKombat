@@ -1,6 +1,6 @@
 const firstPerson = {
     name: 'Scorpion',
-    ht: 100,
+    ht: 80,
     img: '/assets/scorpion.gif',
     weapon: ['Сюрикен', 'Тессен', 'Амигаса', 'Томагавк', 'Гарпун', 'Меч-бабочка', 'Катана', 'Меч ниндзя-то'],
     attack: function(name) {
@@ -32,7 +32,7 @@ function createPlayer(classPlayer, Person) {
     life.classList.add('life');
     name.classList.add('name');
 
-    life.style.width = '100%';
+    life.style.width = Person.ht + '%';
 
     name.innerText = Person.name;
     img.src = Person.img;
