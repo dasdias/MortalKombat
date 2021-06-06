@@ -1,5 +1,6 @@
 const $areaGame = document.querySelector('.arenas');
 const $randomButton = document.querySelector('.button');
+const $control = document.querySelector('.control');
 
 
 const firstPerson = {
@@ -60,10 +61,15 @@ const random = (min, max) => {
 function changeHP (player) {
     const $playerLife = document.querySelector('.player' + player.player +' .life'); 
      player.ht  -= random(1, 20);
+     console.log(player);
      if (player.ht <= 0) {
          $playerLife.style.width = 0 + '%';
          $areaGame.appendChild(playerLose(player.name));
          $randomButton.disabled = true;
+         $resrtButton = createElement('div', 'button--reset');
+         $resrtButton.innerText = 'Начать снова';
+         $resrtButton.setAttribute('onclick', 'window.location.reload()');
+        $control.appendChild($resrtButton)
     } else {
         $playerLife.style.width = player.ht + '%';
     }

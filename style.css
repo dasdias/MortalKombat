@@ -217,12 +217,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1000;
 }
 
-.button {
+.button, .button--reset {
     display: block;
     position: relative;
     padding: 0 16px;
@@ -232,7 +233,8 @@ body {
     text-transform: uppercase;
     background-color: #f5d100;
     border: none;
-    margin-top: 150px;
+    /* margin-top: 150px; */
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
@@ -240,6 +242,11 @@ body {
     cursor: pointer;
     font-family: "Mortal Kombat 3";
     outline: none;
+}
+.button--reset {
+    background-color: #ff564d;
+    padding-top: 8px;
+    line-height: 1;
 }
 .button::after {
     content: "";
