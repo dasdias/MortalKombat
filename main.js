@@ -7,7 +7,7 @@ const firstPerson = {
     player: 1,
     name: 'Scorpion',
     ht: 100,
-    img: '/assets/scorpion.gif',
+    img: './assets/scorpion.gif',
     weapon: ['Сюрикен', 'Тессен', 'Амигаса', 'Томагавк', 'Гарпун', 'Меч-бабочка', 'Катана', 'Меч ниндзя-то'],
     attack: function(name) {
         console.log(name + ' ' + 'Fight...');
@@ -17,7 +17,7 @@ const secondPerson = {
     player: 2,
     name: 'Sonya',
     ht: 100,
-    img: '/assets/sonya.gif',
+    img: './assets/sonya.gif',
     weapon: ['Сюрикен', 'Тессен', 'Амигаса', 'Томагавк', 'Гарпун', 'Меч-бабочка', 'Катана', 'Меч ниндзя-то'],
     attack: function(name) {
         console.log(name + ' ' + 'Fight...');
